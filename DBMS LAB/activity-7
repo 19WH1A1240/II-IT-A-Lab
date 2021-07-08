@@ -16,3 +16,4 @@ select count(*) from tab1;
 select hno,name from tab1 where cgpa > (select avg(cgpa) from tab1);
 select * from tab1 order by cgpa;
 select * from tab1 order by name desc;
+select name as Student_name from tab1 group by(name) having sum(cgpa) > 8;
