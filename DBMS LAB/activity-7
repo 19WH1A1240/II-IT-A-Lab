@@ -1,0 +1,18 @@
+create database 19WH1A1240;
+use 19WH1A1240;
+show tables;
+create table tab1(hno int primary key, name varchar(100), cgpa real);
+show tables;
+insert into tab1 values(1240,"Bhavana",9);
+insert into tab1 values(1241,"Bhavana",8.9);
+insert into tab1 values(1242,"srija",7.8);
+insert into tab1 values(1243,"spoorthi",10);
+insert into tab1 values(1244,"shivani",9);
+select max(cgpa) as Maximum from tab1;
+select min(cgpa) as Minimum from tab1;
+select avg(cgpa) as Average from tab1;
+select sum(cgpa) as total_sum from tab1;
+select count(*) from tab1;
+select hno,name from tab1 where cgpa > (select avg(cgpa) from tab1);
+select * from tab1 order by cgpa;
+select * from tab1 order by name desc;
