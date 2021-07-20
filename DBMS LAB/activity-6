@@ -19,4 +19,4 @@ select activity_name from activity where activity_cost in (400,500);
 select hno as ROLL_NUM from tab1 where cgpa<9 union select hno from activity where activity_cost > 300;
 select hno as STUDENT_id from tab1 where cgpa>=10 and hno in (select hno from activity where activity_name="music");
 select hno as STUDENT_id from tab1 where cgpa>=9 or hno in (select hno from activity where activity_name="music");
-select hno from tab1 where cgpa>8 intersect select hno from activity where activity_cost>300;
+
